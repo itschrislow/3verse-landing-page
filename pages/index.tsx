@@ -13,9 +13,9 @@ const Home: NextPage = () => {
   }, [muted])
 
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-transparent p-10 sm:p-5">
+    <div className="flex h-full min-h-screen w-full items-center justify-center bg-transparent p-10 sm:p-5">
       {/* VIDEO */}
-      <div className="opacity- absolute -z-10 h-screen w-full bg-black opacity-100">
+      <div className="opacity- absolute -z-10 h-full min-h-screen w-full bg-black opacity-100">
         <video
           ref={vidRef}
           autoPlay
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
       {/* VOLUME */}
       <button
         onClick={() => setMuted(!muted)}
-        className="absolute bottom-10 left-10 text-white text-opacity-50"
+        className="absolute bottom-5 left-5 text-white text-opacity-50 sm:bottom-10 sm:left-10"
       >
         {muted ? (
           // MUTED
