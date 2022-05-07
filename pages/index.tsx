@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   const vidRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
-    if (vidRef.current) vidRef.current.muted = false
+    // if (vidRef.current) vidRef.current.muted = false
   }, [])
 
   return (
