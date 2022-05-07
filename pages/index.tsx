@@ -1,10 +1,24 @@
 import type { NextPage } from "next"
+import { useEffect, useRef } from "react"
 
 const Home: NextPage = () => {
+  const vidRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (vidRef.current) vidRef.current.muted = false
+  }, [])
+
   return (
     <div className="flex h-screen w-full items-center justify-center bg-transparent p-10 sm:p-5">
       <div className="opacity- absolute -z-10 h-screen w-full bg-black opacity-100">
-        <video autoPlay loop className="h-full w-full object-cover opacity-50">
+        <video
+          ref={vidRef}
+          autoPlay
+          loop
+          muted
+          preload="auto"
+          className="h-full w-full object-cover opacity-50"
+        >
           {/* NOTE: update video source here */}
           <source src="/static/video.mp4" type="video/mp4" />
         </video>
