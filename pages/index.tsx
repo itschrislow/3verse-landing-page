@@ -28,45 +28,65 @@ const Home: NextPage = () => {
           <source src="/static/video.mp4" type="video/mp4" />
         </video>
       </div>
+      {/* LOGO */}
+      <img
+        src="/static/logo_words_white.png"
+        className="absolute top-4 my-auto h-auto w-12"
+      />
       {/* COPYWRITING */}
       <div className="mx-auto max-w-4xl text-center">
         <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
-          Trusted by developers from over 80 planets
+          Fight climate change with digital currency backed by real trees
         </h1>
-        <h2 className="mt-3 text-xl text-gray-300 sm:mt-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-          repellat laudantium.
-        </h2>
         <div className="mt-10 pb-12 sm:pb-16">
           <div className="mx-auto max-w-4xl">
             <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
               <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
-                  Pepperoni
+                  Trees Pledged
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-emerald-500">
-                  100%
+                <dd className="order-1 text-5xl font-extrabold text-primary">
+                  421
                 </dd>
               </div>
               <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
-                  Delivery
+                  CO² Offseted
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-emerald-500">
-                  24/7
+                <dd className="order-1 text-5xl font-extrabold text-primary">
+                  8841kg
                 </dd>
               </div>
               <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
-                  Calories
+                  Market Capitalization
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-emerald-500">
+                <dd className="order-1 text-5xl font-extrabold text-primary">
                   100k
                 </dd>
               </div>
             </dl>
           </div>
         </div>
+        <a href="https://climate-hack-app.vercel.app/">
+          <button className="group mx-auto flex items-center justify-center text-2xl font-semibold text-white">
+            <span className="mr-4">Enter app</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-7 w-7 transform transition-all group-hover:translate-x-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+        </a>
       </div>
       {/* VOLUME */}
       <button
