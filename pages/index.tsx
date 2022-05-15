@@ -29,23 +29,23 @@ const Home: NextPage = () => {
         </video>
       </div>
       {/* LOGO */}
-      <img
-        src="/static/logo_words_white.png"
-        className="absolute top-4 my-auto h-auto w-12"
-      />
       {/* COPYWRITING */}
-      <div className="mx-auto max-w-4xl text-center">
-        <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
+      <div className="mx-auto text-center">
+        <img
+          src="/static/logo_words_white.png"
+          className="mx-auto mb-8 h-auto w-48"
+        />
+        <h1 className="mb-4 text-3xl font-light text-white">
           Fight climate change with digital currency backed by real trees
         </h1>
-        <div className="mt-10 pb-12 sm:pb-16">
+        <div className="mt-10 pb-10">
           <div className="mx-auto max-w-4xl">
             <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
               <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
                   Trees Pledged
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-primary">
+                <dd className="order-1 text-5xl font-light text-primary">
                   421
                 </dd>
               </div>
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
                   CO² Offseted
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-primary">
+                <dd className="order-1 text-5xl font-light text-primary">
                   8841kg
                 </dd>
               </div>
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
                   Market Capitalization
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-primary">
+                <dd className="order-1 text-5xl font-light text-primary">
                   100k
                 </dd>
               </div>
