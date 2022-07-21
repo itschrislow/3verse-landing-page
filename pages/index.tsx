@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             </dl>
           </div>
         </div>
-        <a href="https://climate-hack-app.vercel.app/">
+        <a href="https://3verse.vercel.app/">
           <button className="group mx-auto flex items-center justify-center text-2xl font-semibold text-white">
             <span className="mr-4">Enter app</span>
             <span>
